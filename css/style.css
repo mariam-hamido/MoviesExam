@@ -1,0 +1,106 @@
+/* The side navigation menu */
+.logo{
+    width: 50px;
+}
+.nav-tabs{
+    transition: transform 10s ease;
+}
+#navIcon{
+   cursor: pointer;
+  /* Transition duration: 0.3 seconds */
+
+}
+
+
+.movie{
+    transition: all 1s;
+}
+.movie:hover #Movie-img{
+    scale: 1.2;
+    filter: blur(3px);
+    transform: rotate(5deg);
+    transition: all 1s;
+}
+
+.left-side{
+    transform: translateX(-110%);
+}
+
+.vote{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+.movie:hover .over-layer{
+    visibility: visible;
+    display: flex;
+    transition: all 1s;
+}
+.movie:hover .left-side{
+    transform: translateX(0);
+    transition: all 1s;
+}
+.movie .over-layer{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.289);
+    justify-content: center;
+    transition: all ease-in 0.5s;
+}
+
+
+.borderB{
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0%;
+}
+
+.btn:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+.links ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease-in-out forwards;
+    animation-delay: 0.1s;
+  }
+  
+  .links ul li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .links ul li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .links ul li:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .links ul li:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
